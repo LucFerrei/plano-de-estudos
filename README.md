@@ -13,6 +13,7 @@ Plano de ação para me aprofundar em desenvolvimento de software e dominar o us
 | [`plano-de-estudos.md`](plano-de-estudos.md) | O plano completo: diagnóstico, regras, rotina, fases e metas |
 | [`progresso.md`](progresso.md) | Log de progresso com checkboxes (marque conforme avança) |
 | [`COMO-USAR.md`](COMO-USAR.md) | Como operar o repo e usar IA pra avaliar progresso |
+| [`recursos.md`](recursos.md) | Fontes de estudo (primária × secundária), com regras anti-colecionismo |
 
 ## Rotina semanal (resumo)
 
