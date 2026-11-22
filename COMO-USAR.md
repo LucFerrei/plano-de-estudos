@@ -12,6 +12,7 @@ Guia rápido de como operar o plano no dia a dia e como usar IA pra avaliar teu 
 | `progresso.md` | O **diário** (onde estou) | Todo dia, antes e depois da sessão |
 | `README.md` | O **lembrete** (rotina + regras) | Quando esquecer o básico |
 | `COMO-USAR.md` | Este guia | Quando esquecer a mecânica |
+| `recursos.md` | As **fontes** (primária × secundária) | Quando for estudar um tópico |
 
 ---
 

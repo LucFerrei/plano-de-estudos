@@ -1,6 +1,8 @@
 # Plano de Ação — Dev, Backend e IA
 
 > Objetivo dos próximos 3 meses: **ler o codebase do trabalho e escrever features do zero** (JS/TS), **lidar com banco/filas/CI-CD** no dia a dia, e **usar IA como revisor/multiplicador** — não como autor.
+>
+> 📚 Fontes de estudo (primária × secundária) consolidadas em [`recursos.md`](recursos.md).
 
 ---
 
