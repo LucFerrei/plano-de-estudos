@@ -55,7 +55,7 @@ A trilha de IA não substitui as regras de guardrail — ela depende delas. Voc�
 ## 4. Trilha Dev
 
 ### Fase 0 — Semana 1: Setup (rápido)
-- [ ] **Setup:** Node + VSCode com o debugger funcionando (breakpoint, call stack, watch).
+- [ ] **Setup:** Node + debugger no Neovim (`nvim-dap` + `nvim-dap-ui`) funcionando (breakpoint, call stack, watch).
 - [ ] Log de progresso criado (`progresso.md`).
 - [ ] *(Opcional)* Teste de nivelamento antes/depois, só se quiser medir evolução — não é obrigatório, já que vamos ver tudo do zero.
 
@@ -82,7 +82,7 @@ Revisitar o básico com profundidade, nessa ordem:
 
 ### Fase 3 — Transversal (da semana 3 em diante, contínua): Ler código + depurar
 - [ ] **Leitura (1×/semana, 30–45 min):** pegar um arquivo do codebase do trabalho (não o meu) e traçar: entry point → fluxo. Anotar. Confirmar no debugger.
-- [ ] **Debuggar com breakpoint, nunca `console.log` primeiro.** Aprender breakpoint condicional, call stack, watch, step into/over.
+- [ ] **Debuggar com breakpoint, nunca `console.log` primeiro.** No `nvim-dap`: breakpoint condicional, call stack, watch, step into/over.
 - [ ] Recurso: *The Programmer's Brain* (Felienne Hermans) — capítulos de leitura de código.
 
 ### Fase 4 — Contínua: Escrever do zero (projetos mensais)

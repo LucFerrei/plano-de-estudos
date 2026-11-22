@@ -10,7 +10,7 @@ Log de progresso do plano. Marque os checkboxes conforme avança. Atualize a dat
 
 ## Fase 0 — Setup (Semana 1, rápido)
 
-- [ ] Node + VSCode debugger funcionando
+- [ ] Node + debugger no Neovim (nvim-dap + nvim-dap-ui) funcionando
 - [ ] Log de progresso criado
 - [ ] (Opcional) Teste de nivelamento antes/depois
 
