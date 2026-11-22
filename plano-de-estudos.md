@@ -54,11 +54,10 @@ A trilha de IA não substitui as regras de guardrail — ela depende delas. Voc�
 
 ## 4. Trilha Dev
 
-### Fase 0 — Semana 1: Diagnóstico e setup
-- [ ] **Mapa do que eu não sei:** abrir o código do trabalho e listar cada conceito que aparece e não domino (`useEffect`, `Promise.all`, closure, `Map`, etc.).
-- [ ] **Teste de nivelamento (sem consultar):** explicar em voz alta — *event loop, closure, `this`, promise vs callback, `==` vs `===`, hoisting, prototype, ESM vs CJS, async/await, spread/rest*. O que travar vira lista de estudos.
+### Fase 0 — Semana 1: Setup (rápido)
 - [ ] **Setup:** Node + VSCode com o debugger funcionando (breakpoint, call stack, watch).
-- [ ] Criar o log de progresso (`progresso.md`).
+- [ ] Log de progresso criado (`progresso.md`).
+- [ ] *(Opcional)* Teste de nivelamento antes/depois, só se quiser medir evolução — não é obrigatório, já que vamos ver tudo do zero.
 
 ### Fase 1 — Semanas 2–6: O modelo mental de JavaScript
 Revisitar o básico com profundidade, nessa ordem:

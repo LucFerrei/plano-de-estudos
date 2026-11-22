@@ -8,12 +8,11 @@ Log de progresso do plano. Marque os checkboxes conforme avança. Atualize a dat
 
 ---
 
-## Fase 0 — Diagnóstico e setup (Semana 1)
+## Fase 0 — Setup (Semana 1, rápido)
 
-- [ ] Mapa do que não sei (lista de conceitos do código do trabalho)
-- [ ] Teste de nivelamento dos 10 conceitos (sem consultar)
 - [ ] Node + VSCode debugger funcionando
 - [ ] Log de progresso criado
+- [ ] (Opcional) Teste de nivelamento antes/depois
 
 ## Fase 1 — Modelo mental de JavaScript (Semanas 2–6)
 
