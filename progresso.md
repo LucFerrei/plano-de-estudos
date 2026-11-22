@@ -72,6 +72,35 @@ Semana a semana:
 - [ ] Semana 11
 - [ ] Semana 12
 
+## Trilha Backend/Infra (enxuta)
+
+### Módulo B1 — SQL e Postgres
+- [ ] SELECT, WHERE, ORDER BY, LIMIT
+- [ ] JOIN (INNER/LEFT) e GROUP BY + HAVING, agregações
+- [ ] Subqueries e CTEs (WITH)
+- [ ] Índices (o que são, quando ajudam, EXPLAIN)
+- [ ] Transactions (ACID, BEGIN/COMMIT/ROLLBACK)
+- [ ] Constraints e modelagem mínima (PK/FK)
+- [ ] Aplicado: entender as queries do banco do trabalho (ou do weekly)
+- [ ] Recurso: SQLZoo + "Use the Index, Luke"
+
+### Módulo B2 — CI/CD e GitHub Actions
+- [ ] CI vs CD
+- [ ] Workflow, job, step, action, trigger, secrets, environments
+- [ ] Workflow real: lint + test + build
+- [ ] Deploy básico (dev/prod, aprovação, rollback)
+- [ ] Aplicado: CI de um projeto do trabalho
+- [ ] Recurso: docs do GitHub Actions
+
+### Módulo B3 — Filas (message queues)
+- [ ] Por que filas (desacoplar, retry, backpressure)
+- [ ] Producer/consumer, acknowledgement, redelivery
+- [ ] DLQ e retry com backoff
+- [ ] Idempotência do consumer
+- [ ] Ferramenta: Redis / BullMQ / SQS
+- [ ] Aplicado: fila simples num projeto do trabalho
+- [ ] Recurso: docs do BullMQ/SQS
+
 ## Trilha IA
 
 ### Parte A — Fundamentos (semanas 1–3)
@@ -120,6 +149,7 @@ Claude Code:
 
 ### Mês 1
 - [ ] 9 tópicos de JS explicáveis sem consultar + 2 exercícios cada, sem IA
+- [ ] SQL do zero até JOIN + transaction; explicar uma query real do trabalho
 - [ ] Explicar o loop agente→tool→modelo
 - [ ] `AGENTS.md`/`CLAUDE.md` criados no projeto do trabalho
 - [ ] "Plano antes de código" em toda tarefa
@@ -127,6 +157,7 @@ Claude Code:
 ### Mês 2
 - [ ] 5+ type-challenges resolvidos
 - [ ] 4 arquivos do codebase lidos e documentados
+- [ ] Pipeline CI/CD funcional (lint+test+build) no projeto do trabalho
 - [ ] Permissions/MCP/subagentes dominados
 - [ ] Prompt caching + escolha de modelo aplicados
 - [ ] 5 técnicas de IA registradas no log
@@ -134,6 +165,7 @@ Claude Code:
 ### Mês 3
 - [ ] 2 projetos pequenos sem IA
 - [ ] 1 bug real depurado só com breakpoint
+- [ ] Fila modelada/implementada com retry/idempotência
 - [ ] 1 automação com a API (function calling/structured output)
 - [ ] Custo/latência medidos antes/depois e documentados
 

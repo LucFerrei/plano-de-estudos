@@ -1,6 +1,6 @@
-# Plano de Ação — Dev + IA
+# Plano de Ação — Dev, Backend e IA
 
-> Objetivo dos próximos 3 meses: **conseguir ler o codebase do trabalho, explicar o que ele faz e escrever features do zero**, com IA apenas como revisor — não como autor.
+> Objetivo dos próximos 3 meses: **ler o codebase do trabalho e escrever features do zero** (JS/TS), **lidar com banco/filas/CI-CD** no dia a dia, e **usar IA como revisor/multiplicador** — não como autor.
 
 ---
 
@@ -13,7 +13,7 @@
 | Muita amplitude (Rust, C, Lua, Nix, TS) | Pouca consolidação — superfície, não profundidade |
 | Já tem disciplina de estudo (cs-studies) | Plano gigante demais pra sustentar |
 
-O código TS já é bom (usa genéricos, discriminated unions, `Extract`). O que falta não é sintaxe — é a **camada de baixo** (runtime/JS) e as **práticas de engenharia** (ler código, depurar, escrever do zero). IA idem: **uso, mas nunca estudei** — falta o modelo mental de como a ferramenta funciona.
+O código TS já é bom (usa genéricos, discriminated unions, `Extract`). O que falta não é sintaxe — é a **camada de baixo** (runtime/JS) e as **práticas de engenharia** (ler código, depurar, escrever do zero). IA idem: **uso, mas nunca estudei** — falta o modelo mental de como a ferramenta funciona. E os temas de **backend/infra** (banco, filas, CI/CD) aparecem no trabalho e precisam entrar de forma enxuta.
 
 ---
 
@@ -23,10 +23,11 @@ O código TS já é bom (usa genéricos, discriminated unions, `Extract`). O que
 |---|---|---|---|
 | Drill diário (JS) | 5×/semana | 30–40 min | Fundamentos de JS, **sem IA** |
 | Bloco de projeto | 1×/semana | 3–4h | Escrever do zero, ler código, debuggar — **IA só como revisor** |
+| Bloco backend/infra | 1×/semana | 1–1,5h | SQL, filas, CI/CD — aplicado no trabalho |
 | Bloco de IA | 1×/semana | 1–1,5h | Fundamentos + dominar OpenCode/Claude Code (semanas 1–4), depois vira hábito |
 | Trilha Rust | 1×/semana | 30–60 min | Manter o que gosto, leve |
 
-Total ~8,5h, com folga até 10h. O bloco de IA encolhe depois da semana 4 e **vira técnica aplicada** nas outras sessões.
+Total ~9,5h, com folga até 10h+. O bloco de IA encolhe depois da semana 4 e **vira técnica aplicada** nas outras sessões. Se apertar, a primeira trilha a encolher é a de Rust.
 
 ---
 
@@ -97,7 +98,42 @@ Um projeto pequeno por mês, **100% sem IA na escrita** (IA só pra review):
 
 ---
 
-## 5. Trilha IA
+## 5. Trilha Backend/Infra (enxuta)
+
+Objetivo: as 3 coisas que você precisa **no trabalho**, sem a teoria pesada — SQL/banco, CI/CD, filas. Aplique direto no contexto real (banco do trabalho, projeto do trabalho). **CAP theorem fica de fora** por ora (teoria de sistemas distribuídos).
+
+### Módulo B1 — SQL e Postgres (~4 semanas)
+- [ ] `SELECT`, `WHERE`, `ORDER BY`, `LIMIT`
+- [ ] `JOIN` (INNER/LEFT) e `GROUP BY` + `HAVING`, agregações
+- [ ] Subqueries e CTEs (`WITH`)
+- [ ] Índices: o que são, quando ajudam, `EXPLAIN`
+- [ ] Transactions: ACID, `BEGIN`/`COMMIT`/`ROLLBACK`, isolamento básico
+- [ ] Constraints e modelagem mínima (PK/FK, normalização na prática)
+- [ ] **Aplicado:** rodar e entender as queries do banco do trabalho (ou do `weekly`, sqlx + Postgres); saber o que o ORM/query builder gera
+- [ ] Recurso: SQLZoo + "Use the Index, Luke"
+
+### Módulo B2 — CI/CD e GitHub Actions (~3 semanas)
+- [ ] CI vs CD, por que pipeline
+- [ ] GitHub Actions: workflow, job, step, action, trigger, secrets, environments
+- [ ] Workflow real: lint + test + build
+- [ ] Deploy básico: ambientes (dev/prod), aprovação, rollback
+- [ ] **Aplicado:** criar o CI de um projeto do trabalho (ou do teu repo)
+- [ ] Recurso: docs do GitHub Actions + o workflow do teu `cs-studies` como base
+
+### Módulo B3 — Filas (message queues) (~4 semanas)
+- [ ] Por que filas: desacoplar, retry, backpressure, trabalho async
+- [ ] Producer/consumer, acknowledgement, redelivery
+- [ ] Dead letter queue (DLQ) e retry com backoff
+- [ ] Idempotência do consumer (por que importa)
+- [ ] Ferramenta: Redis (já usa) ou BullMQ (TS) / SQS
+- [ ] **Aplicado:** modelar/implementar uma fila simples num projeto do trabalho
+- [ ] Recurso: docs do BullMQ/SQS
+
+**Como encaixar:** um bloco de ~1–1,5h/semana, aplicando direto nas tarefas reais do trabalho. Isso é estudo que vira trabalho — não é tempo "extra" jogado fora.
+
+---
+
+## 6. Trilha IA
 
 ### Parte A — Fundamentos mínimos (semanas 1–3, dedicado)
 1. [ ] **O que um LLM faz de verdade:** prediz o próximo token; não "pensa". Consequências: alucina, é literal, só sabe o que está no contexto.
@@ -133,12 +169,17 @@ As 6 técnicas da seção 3, uma por semana, aplicadas de propósito nas sessõe
 
 ---
 
-## 6. Metas de 3 meses
+## 7. Metas de 3 meses
 
 ### Dev
 - **Mês 1:** explicar os 9 tópicos de JS sem consultar + resolver 2 exercícios de cada, sem IA.
 - **Mês 2:** 5+ type-challenges + ler e documentar 4 arquivos do codebase do trabalho.
 - **Mês 3:** 2 projetos pequenos sem IA + depurar 1 bug real só com breakpoint.
+
+### Backend
+- **Mês 1:** SQL do zero até `JOIN` + transaction; explicar uma query real do trabalho.
+- **Mês 2:** CI/CD — pipeline funcional (lint + test + build) num projeto do trabalho.
+- **Mês 3:** filas — modelar/implementar uma fila com retry/idempotência.
 
 ### IA
 - **Mês 1:** explicar o loop agente→tool→modelo + criar `AGENTS.md`/`CLAUDE.md` no projeto do trabalho + usar "plano antes de código" em toda tarefa.
@@ -147,6 +188,8 @@ As 6 técnicas da seção 3, uma por semana, aplicadas de propósito nas sessõe
 
 ---
 
-## 7. Fora do escopo (por ora)
+## 8. Fora do escopo (por ora)
 
-O `cs-studies` (OSTEP, redes, Cormen) segue como **backlog opcional** — só depois de consolidar o básico. Uma trilha de cada vez.
+Backlog opcional — só depois de consolidar o básico:
+- **CAP theorem** e teoria de sistemas distribuídos (volta junto com o `cs-studies`).
+- O `cs-studies` completo (OSTEP, redes, Cormen).
